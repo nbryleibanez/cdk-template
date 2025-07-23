@@ -1,4 +1,9 @@
 import * as cdk from "aws-cdk-lib";
+
+export interface BaseConstructProps {
+  stage: string;
+}
+
 export interface BaseStackProps extends cdk.StackProps {
   stage: string;
 }
